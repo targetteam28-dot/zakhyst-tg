@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Захист UA — напишіть юристу в Telegram</title>
+<meta name="description" content="Юридична допомога військовим. Напишіть онлайн-помічнику «Захист UA» в Telegram — відповідь і запис на консультацію без дзвінків і черг.">
+<meta property="og:title" content="Захист UA — напишіть нам у Telegram">
+<meta property="og:description" content="Онлайн-помічник прийме ваше питання і запише на безкоштовну консультацію з юристом.">
+<meta property="og:image" content="lawyer.webp">
+<meta name="theme-color" content="#0f2340">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231a3a8f'/%3E%3Cpath d='M16 6l8 3v6c0 5.5-3.6 9.2-8 11-4.4-1.8-8-5.5-8-11V9z' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="lawyer.webp">
+
+<!-- ===== НАЛАШТУВАННЯ ===== -->
+<script>
+window.CONFIG = {
+  PIXEL_ID: '1452823599154656',                // Meta Pixel
+  TG_URL:   'https://t.me/zakhystua_bot'       // посилання на бота
+};
+</script>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', window.CONFIG.PIXEL_ID);
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1452823599154656&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1a3a8f;--navy2:#0f2340;--navy3:#142d6e;
+  --text:#1b2433;--text2:#5b6472;--text3:#8b93a1;
+  --bg:#fff;--bg2:#f4f6f9;--line:#e3e7ee;
+  --tg:#229ed9;--tg2:#1b8bc2;--green:#1f9d55;--orange:#f26a1b;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--text);background:#dde2ea;min-height:100vh}
+a{-webkit-tap-highlight-color:transparent}
+svg{display:block}
+.page{max-width:430px;margin:0 auto;background:var(--bg);min-height:100vh;overflow:hidden;box-shadow:0 20px 60px rgba(15,35,64,.14)}
+@media(min-width:600px){.page{margin:28px auto;border-radius:32px;min-height:auto}}
+
+/* HEADER */
+.top{display:flex;align-items:center;justify-content:space-between;padding:8px 12px 8px 8px;border-bottom:1px solid var(--line);background:#fff}
+.top-logo img{height:42px;width:auto;display:block}
+.call{display:flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;background:var(--bg2);color:var(--navy2);font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap}
+.call svg{color:var(--orange)}
+
+/* HERO */
+.hero{background:linear-gradient(180deg,var(--navy2) 0%,var(--navy3) 100%);color:#fff;padding:24px 18px 26px;position:relative}
+.badge{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#cfe9ff;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:6px 11px;border-radius:999px;margin-bottom:16px}
+.dot{width:8px;height:8px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 0 rgba(61,220,132,.6);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(61,220,132,.55)}70%{box-shadow:0 0 0 8px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+.hero-grid{display:grid;grid-template-columns:1fr 104px;gap:14px;align-items:start}
+.hero h1{font-size:25px;line-height:1.15;font-weight:800;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:#7cc8f2}
+.ph{width:104px;height:126px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06)}
+.ph img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.hero-sub{font-size:15px;line-height:1.5;color:#cfd9e8;margin-top:14px}
+.who{font-size:12.5px;color:#9fb1ca;margin-top:12px;line-height:1.4}
+.who b{color:#fff;font-weight:600}
+
+/* TG BUTTON */
+.btn-tg{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:20px;padding:17px 16px;border-radius:14px;background:linear-gradient(180deg,#2aabee 0%,var(--tg2) 100%);color:#fff;font-size:17px;font-weight:700;text-decoration:none;box-shadow:0 10px 24px rgba(34,158,217,.38),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .12s}
+.btn-tg:active{transform:scale(.98)}
+.btn-tg svg{flex-shrink:0}
+.micro{text-align:center;font-size:12.5px;color:#9fb1ca;margin-top:10px}
+
+/* FOOTER */
+.map-btn{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;text-decoration:none;margin:4px 0 14px;box-shadow:0 4px 12px rgba(15,35,64,.05)}
+.map-thumb{width:64px;height:64px;border-radius:9px;flex-shrink:0;position:relative;overflow:hidden;
+  background:linear-gradient(90deg,transparent 46%,#fff 46% 54%,transparent 54%),linear-gradient(0deg,transparent 30%,#fff 30% 36%,transparent 36%),linear-gradient(35deg,transparent 60%,#bcd9f2 60% 76%,transparent 76%),#e8efe3}
+.map-thumb svg{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);color:#e5484d}
+.map-txt{flex:1;font-size:13px;color:var(--text2);line-height:1.4}
+.map-txt b{display:block;color:var(--navy2);font-size:14px}
+.map-go{color:#1e63d6;font-size:12.5px;font-weight:700;white-space:nowrap}
+.foot{padding:22px 18px 20px;background:var(--bg2);border-top:1px solid var(--line)}
+.foot img{height:40px;width:auto;display:block;margin-bottom:12px;mix-blend-mode:multiply}
+.foot-row{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;margin-bottom:9px}
+.foot-row svg{flex-shrink:0;color:var(--orange);margin-top:2px}
+.foot-row a{color:var(--navy2);font-weight:600;text-decoration:none}
+.foot-copy{font-size:11.5px;color:var(--text3);margin-top:10px}
+
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13 1.4 11.5c-1-.3-1.1-1 .2-1.5L20.5 2.8c.9-.3 1.6.2 1.4 1.5Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 14 14"><path d="M7 1C5 1 3.5 2.5 3.5 4.5C3.5 7 7 13 7 13S10.5 7 10.5 4.5C10.5 2.5 9 1 7 1Z" fill="currentColor"/><circle cx="7" cy="4.5" r="1.5" fill="#fff"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 14 14"><path d="M2.5 1.8H5.2L6.4 4.9L4.8 6.1C5.7 7.8 7.2 9.3 8.9 10.2L10.1 8.6L13.2 9.8V12.5C13.2 13 12.8 13.3 12.3 13.3C6.5 13.1 1.9 8.5 1.7 2.7C1.7 2.2 2 1.8 2.5 1.8Z" fill="currentColor"/></symbol>
+</svg>
+
+<main class="page">
+
+  <header class="top">
+    <a class="top-logo" href="#"><img src="logo.webp" alt="Захист UA"></a>
+    <a class="call" href="tel:+380930171020"><svg width="14" height="14"><use href="#i-phone"/></svg>093 017 10 20</a>
+  </header>
+
+  <section class="hero">
+    <div class="badge"><span class="dot"></span>Онлайн-помічник на зв'язку</div>
+    <div class="hero-grid">
+      <h1>Маєте питання до юриста? <em>Напишіть нам у Telegram</em></h1>
+      <div class="ph"><img src="lawyer.webp" alt="Євген Орешечко, керівник юридичного відділу"></div>
+    </div>
+    <p class="hero-sub">Опишіть ситуацію своїми словами. Помічник одразу відповість, збере потрібні деталі й запише вас на безкоштовну консультацію з юристом.</p>
+    <p class="who"><b>Євген Орешечко</b>, керівник юридичного відділу «Захист UA»</p>
+
+    <a class="btn-tg" href="https://t.me/zakhystua_bot" target="_blank" rel="noopener" data-tg="hero">
+      <svg width="22" height="22"><use href="#i-tg"/></svg>Написати в Telegram
+    </a>
+    <p class="micro">Без дзвінків і черг · Безкоштовно · Конфіденційно</p>
+  </section>
+
+  <footer class="foot">
+    <img src="logo.webp" alt="Захист UA">
+    <a class="map-btn" href="https://maps.app.goo.gl/2VXqFxtYmKGrhmMU6" target="_blank" rel="noopener">
+      <span class="map-thumb"><svg width="24" height="24"><use href="#i-pin"/></svg></span>
+      <span class="map-txt"><b>Офіс у Дніпрі</b>Січеславська Набережна, 29А, офіс 710</span>
+      <span class="map-go">Маршрут →</span>
+    </a>
+    <div class="foot-row"><svg width="14" height="14"><use href="#i-phone"/></svg><a href="tel:+380930171020">+380 93 017 10 20</a></div>
+    <div class="foot-row"><svg width="15" height="15" style="color:var(--tg)"><use href="#i-tg"/></svg><a href="https://t.me/zakhystua_bot" target="_blank" rel="noopener" data-tg="footer">@zakhystua_bot</a></div>
+    <div class="foot-row"><svg width="15" height="15" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5.8" stroke="currentColor" stroke-width="1.5"/><path d="M7 4V7.2L9 8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>Пн–Пт 8:00–17:00 · Сб 9:00–16:00 · Нд вихідний</span></div>
+    <div class="foot-copy">© 2026 Захист UA · Код: 3554800454. Інформація на сайті не є публічною офертою.</div>
+  </footer>
+</main>
+
+<script>
+// Посилання на бота з CONFIG + подія Contact у пікселі
+document.querySelectorAll('[data-tg]').forEach(function(a){
+  a.href = window.CONFIG.TG_URL;
+  a.addEventListener('click', function(){
+    try{ fbq('track','Contact',{channel:'telegram',placement:a.dataset.tg}); }catch(e){}
+  });
+});
+</script>
+</body>
+</html>
