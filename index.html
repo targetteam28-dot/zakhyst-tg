@@ -140,11 +140,11 @@ svg{display:block}
 </main>
 
 <script>
-// Посилання на бота з CONFIG + подія Contact у пікселі
+// Посилання на бота з CONFIG + подія Lead у пікселі
 document.querySelectorAll('[data-tg]').forEach(function(a){
   a.href = window.CONFIG.TG_URL;
   a.addEventListener('click', function(){
-    try{ fbq('track','Contact',{channel:'telegram',placement:a.dataset.tg}); }catch(e){}
+    try{ fbq('track','Lead',{content_name:'Telegram bridge',channel:'telegram',placement:a.dataset.tg}); }catch(e){}
   });
 });
 </script>
